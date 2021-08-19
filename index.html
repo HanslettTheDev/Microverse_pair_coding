@@ -9,11 +9,9 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <div>
+    <div id="form">
       <h1 id="title"> SURVEY FORM </h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p>
-    </div>
-
     <form id="survey-form">
       <label for="name" id="name-label">Name:</label>
       <input type="text" name="name" id="name" placeholder="Enter your Name" required><br>
@@ -35,10 +33,12 @@
 
       <!-- radios -->
       <br>
-      <label>How would you recommend us?</label><br>
-      <input type="radio" name="radio1" value="Definitely">Definitely
-      <input type="radio" name="radio1" value="Maybe">Maybe
-      <input type="radio" name="radio1" value="Not Sure">Not Sure
+      <div id="radios">
+        <label>How would you recommend us?</label><br>
+        <input type="radio" name="radio1" value="Definitely">Definitely
+        <input type="radio" name="radio1" value="Maybe">Maybe
+        <input type="radio" name="radio1" value="Not Sure">Not Sure
+      </div>
 
       <!-- check boxes -->
 
@@ -50,12 +50,16 @@
       <input type="checkbox" value="Challenges">Challenges<br>
       <input type="checkbox" value="Open Source Community">Open Source Community<br>
 
-      <label>You got something to say more?</label><br>
-      <textarea name="" cols="30" rows="10"></textarea><br>
+      <div id="label">
+        <label>You got something to say more?</label><br>
+        <textarea name="" cols="30" rows="10"></textarea><br>
+      </div>
+      
 
       <input type="submit" id="submit" value="Submit">
 
     </form>
+  </div>
     <!--
 
     Hello Camper!

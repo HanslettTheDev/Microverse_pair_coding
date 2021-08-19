@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    color:white;
+}
+
+#description{
+    margin-bottom: 50px;
+}
+
+input{
+    margin-bottom: 30px;   
+    border-radius: 5px; 
+    border-bottom-color: rgb(107, 70, 70);
+    padding: 10px;
+}
+
+#dropdown{
+    padding: 10px;
+}
+
+#radios{
+    margin-top: 30px;
+}
+
+#label{
+    margin-top: 30px;
+}
+textarea{
+    margin-top:10px;
+    margin-bottom: 20px;
+}
