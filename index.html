@@ -9,12 +9,53 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <div id="title">
-      <h1> SURVEY FORM </h1>
-      <p>
-        Thank you for taking the time to help us improve the platform
-      </p>
+    <div>
+      <h1 id="title"> SURVEY FORM </h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
     </div>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your Name" required><br>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email" required><br>
+      <label for="number" id="number-label">Number:</label>
+      <input type="number" name="number" placeholder="ID" id="number" min="2" max="7"><br>
+
+
+      <!-- Dropdown -->
+      <label>Tell us who you are:</label>
+      <select id="dropdown">
+        <option>Student</option>
+        <option>Full time Job</option>
+        <option>Full time learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+
+      <!-- radios -->
+      <br>
+      <label>How would you recommend us?</label><br>
+      <input type="radio" name="radio1" value="Definitely">Definitely
+      <input type="radio" name="radio1" value="Maybe">Maybe
+      <input type="radio" name="radio1" value="Not Sure">Not Sure
+
+      <!-- check boxes -->
+
+      <br>
+      <label>How would you like us to improve?</label><br>
+      <input type="checkbox" value="Front-end">Front-end<br>
+      <input type="checkbox" value="Back-end">Back-end<br>
+      <input type="checkbox" value="Data visualization">Data visualization<br>
+      <input type="checkbox" value="Challenges">Challenges<br>
+      <input type="checkbox" value="Open Source Community">Open Source Community<br>
+
+      <label>You got something to say more?</label><br>
+      <textarea name="" cols="30" rows="10"></textarea><br>
+
+      <input type="submit" id="submit" value="Submit">
+
+    </form>
     <!--
 
     Hello Camper!
